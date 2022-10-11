@@ -9,40 +9,48 @@
 </head>
 <body>
     <div class="container">
-        <h1 class = "heading">Cash Register Manager</h1>
-        <p class = "description">
+        <h1 class = "head">Cash Register Manager</h1>
+        <p class = "text">
             Enter the bill amount and cash given by the customer and know minimum
              number of notes to return.
         </p>
-        <label for = "bill-amount">Bill Amount:</label>
-        <input id = "bill-amount" type = "number" min="0" > </input>
-        <label for = "cash-given">Cash Given:</label>
-        <input id = "cash-given" type = "number" min="0" > </input>
-        <button id = "check-button">Check</button>
-        <p id = "error-message"></p>
-        <table class = "change-table">
-            <caption>Return change:-</caption>
-            <tr>
-                <th>No of Notes</th>
-                <td class = "no-of-notes"></td>
-                <td class = "no-of-notes"></td>
-                <td class = "no-of-notes"></td>
-                <td class = "no-of-notes"></td>
-                <td class = "no-of-notes"></td>
-                <td class = "no-of-notes"></td>
-                <td class = "no-of-notes"></td>
-            </tr>
-            <tr>
-                <th>Notes</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </table>
+        <label for = "billing">Bill Amount:</label>
+        <input id = "billing" type = "number" min="0" > </input>
+        <button id="next-button">Next</button>
+        <div class="container-a">
+            <label for = "cash-given">Cash Given:</label>
+            <input id = "cash-given" type = "number" min="0" > </input>
+            <button id = "submit-button">Submit</button>
+        </div>
+        
+        <p id = "error-msg"></p>
+        
+        <div class="container-b">
+            <table>
+                <caption>Return change:-</caption>
+                <tr>
+                    <th>No. of Notes</th>
+                    <td class = "no-of-notes"></td>
+                    <td class = "no-of-notes"></td>
+                    <td class = "no-of-notes"></td>
+                    <td class = "no-of-notes"></td>
+                    <td class = "no-of-notes"></td>
+                    <td class = "no-of-notes"></td>
+                    <td class = "no-of-notes"></td>
+                </tr>
+                <tr>
+                    <th>Currency Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+        
        
     </div>
 </body>
