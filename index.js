@@ -23,16 +23,18 @@ function checkBillingInput() {
 };
 
 function checkCashInput() {
-    if (Number(cashInput.value) >= Number(billingAmt.value)) {
+    if (Number(cashInput.value) > Number(billingAmt.value)) {
         errorMsg.style.display = "none";
         tableContainer.style.display= "block";
     } else {
         errorMsg.style.display = "block";
-        error("Please input valid cash Amount. Cash Amount should be greater than Bill Amount.");
+        error("Please input valid cash Amount. Cash Given should be greater than Bill Amount.");
         tableContainer.style.display = "none";
 
     }
-};
+        
+ };
+
 function calculateNotes () {
     var amountToBeReturned = cashInput.value - billingAmt.value;
     for (let i = 0; i < notesAvailable.length; i++) {
